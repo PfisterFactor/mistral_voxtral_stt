@@ -23,9 +23,9 @@ Both models support 13 languages: Arabic, Chinese, Dutch, English, French, Germa
 
 ### HACS
 
-1. **Add** [this repository](https://my.home-assistant.io/redirect/hacs_repository/?owner=fabio-garavini&repository=ha-openai-whisper-stt-api&category=integration) to your HACS repositories:
+1. **Add** [this repository](https://my.home-assistant.io/redirect/hacs_repository/?owner=PfisterFactor&repository=mistral_voxtral_stt&category=integration) to your HACS repositories:
 
-    [![Add Repository to HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=fabio-garavini&repository=ha-openai-whisper-stt-api&category=integration)
+    [![Add Repository to HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=PfisterFactor&repository=mistral_voxtral_stt&category=integration)
 
 2. **Install** the `Mistral Voxtral STT` integration
 3. **Restart** Home Assistant

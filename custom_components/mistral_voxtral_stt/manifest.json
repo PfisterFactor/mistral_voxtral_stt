@@ -2,14 +2,14 @@
   "domain": "mistral_voxtral_stt",
   "name": "Mistral Voxtral STT",
   "codeowners": [
-    "@fabio-garavini"
+    "@PfisterFactor"
   ],
   "config_flow": true,
   "dependencies": [],
-  "documentation": "https://github.com/fabio-garavini/ha-openai-whisper-stt-api",
+  "documentation": "https://github.com/PfisterFactor/mistral_voxtral_stt",
   "homekit": {},
   "iot_class": "cloud_push",
-  "issue_tracker": "https://github.com/fabio-garavini/ha-openai-whisper-stt-api/issues",
+  "issue_tracker": "https://github.com/PfisterFactor/mistral_voxtral_stt/issues",
   "requirements": [],
   "ssdp": [],
   "version": "2.0.0",
