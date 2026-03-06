@@ -1,0 +1,56 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dispositivo gia' configurato",
+            "reconfigure_successful": "Dispositivo riconfigurato"
+        },
+        "error": {
+            "connection_error": "Errore di connessione",
+            "invalid_api_key": "Chiave API non valida",
+            "unauthorized": "Assicurati che la tua chiave API abbia i permessi necessari per questo modello",
+            "model_not_found": "Modello non trovato",
+            "unknown": "Errore sconosciuto"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "name": "Nome",
+                    "api_key": "Chiave API",
+                    "model": "Modello",
+                    "temperature": "Temperatura",
+                    "prompt": "Prompt (Opzionale)"
+                },
+                "data_description": {
+                    "api_key": "La tua chiave API Mistral AI",
+                    "prompt": "Prompt puo' essere utilizzato per migliorare il riconoscimento di alcune parole o di nomi.\nFornisci una lista di parole o nomi separate da una virgola.\nEsempio: `accendi, spegni, Chat GPT-3`"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "name": "Nome",
+                    "api_key": "Chiave API (lascia vuoto per mantenere l'esistente)",
+                    "model": "Modello",
+                    "temperature": "Temperatura",
+                    "prompt": "Prompt (Opzionale)"
+                },
+                "data_description": {
+                    "prompt": "Prompt puo' essere utilizzato per migliorare il riconoscimento di alcune parole o di nomi.\nFornisci una lista di parole o nomi separate da una virgola.\nEsempio: `accendi, spegni, Chat GPT-3`"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "model": "Modello",
+                    "temperature": "Temperatura",
+                    "prompt": "Prompt (Opzionale)"
+                },
+                "data_description": {
+                    "prompt": "Prompt puo' essere utilizzato per migliorare il riconoscimento di alcune parole o di nomi.\nFornisci una lista di parole o nomi separate da una virgola.\nEsempio: `accendi, spegni, Chat GPT-3`"
+                }
+            }
+        }
+    }
+}

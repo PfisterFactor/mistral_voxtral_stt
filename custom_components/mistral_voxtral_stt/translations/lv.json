@@ -1,0 +1,56 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Ierice jau ir konfigureta",
+            "reconfigure_successful": "Parkonfiguracija veiksmiga"
+        },
+        "error": {
+            "connection_error": "Savienojuma kluda",
+            "invalid_api_key": "Nederiga API atslega",
+            "unauthorized": "Ludzu parliecinieties, ka jusu API atslegai ir nepieciesamas atlaujas sim modelim",
+            "model_not_found": "Modelis nav atrasts",
+            "unknown": "Nezinama kluda"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "name": "Nosaukums",
+                    "api_key": "API atslega",
+                    "model": "Modelis",
+                    "temperature": "Temperatura",
+                    "prompt": "Uzvedne (neobligats)"
+                },
+                "data_description": {
+                    "api_key": "Jusu Mistral AI API atslega",
+                    "prompt": "Uzvednes var uzlabot runas atpazisanu netipiskiem vardiem.\nVarat noradit ar komatu atdalitu vardu sarakstu.\nPiemeram: `open, close, Chat GPT-3`"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "name": "Nosaukums",
+                    "api_key": "API atslega (atstajiet tuksu, lai saglabatu esoso)",
+                    "model": "Modelis",
+                    "temperature": "Temperatura",
+                    "prompt": "Uzvedne (neobligats)"
+                },
+                "data_description": {
+                    "prompt": "Uzvednes var uzlabot runas atpazisanu netipiskiem vardiem.\nVarat noradit ar komatu atdalitu vardu sarakstu.\nPiemeram: `open, close, Chat GPT-3`"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "model": "Modelis",
+                    "temperature": "Temperatura",
+                    "prompt": "Uzvedne (neobligats)"
+                },
+                "data_description": {
+                    "prompt": "Uzvednes var uzlabot runas atpazisanu netipiskiem vardiem.\nVarat noradit ar komatu atdalitu vardu sarakstu.\nPiemeram: `open, close, Chat GPT-3`"
+                }
+            }
+        }
+    }
+}

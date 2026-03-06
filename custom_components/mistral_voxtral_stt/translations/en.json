@@ -1,0 +1,56 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "reconfigure_successful": "Reconfigured"
+        },
+        "error": {
+            "connection_error": "Connection error",
+            "invalid_api_key": "Invalid API key",
+            "unauthorized": "Make sure your API key has the required permissions for this model",
+            "model_not_found": "Model not found",
+            "unknown": "Unknown error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "name": "Name",
+                    "api_key": "API key",
+                    "model": "Model",
+                    "temperature": "Temperature",
+                    "prompt": "Prompt (Optional)"
+                },
+                "data_description": {
+                    "api_key": "Your Mistral AI API key",
+                    "prompt": "Prompt can be used to improve speech recognition of words or even names.\nProvide a list of words or names separated by a comma.\nExample: `open, close, Chat GPT-3`"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "name": "Name",
+                    "api_key": "API key (leave blank to keep existing)",
+                    "model": "Model",
+                    "temperature": "Temperature",
+                    "prompt": "Prompt (Optional)"
+                },
+                "data_description": {
+                    "prompt": "Prompt can be used to improve speech recognition of words or even names.\nProvide a list of words or names separated by a comma.\nExample: `open, close, Chat GPT-3`"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "model": "Model",
+                    "temperature": "Temperature",
+                    "prompt": "Prompt (Optional)"
+                },
+                "data_description": {
+                    "prompt": "Prompt can be used to improve speech recognition of words or even names.\nProvide a list of words or names separated by a comma.\nExample: `open, close, Chat GPT-3`"
+                }
+            }
+        }
+    }
+}
