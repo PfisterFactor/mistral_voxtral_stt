@@ -34,13 +34,13 @@ from .whisper_provider import DEFAULT_MODEL, MODELS
 # ---- Validation ---------------------------------------------------------
 
 
-async def validate_api_key(api_key: str, model: str) -> None:
-    """Validate the API key by querying the models endpoint."""
-    _LOGGER.debug("Validating API key for model %s", model)
+async def validate_api_key(api_key: str) -> None:
+    """Validate the API key by listing models."""
+    _LOGGER.debug("Validating API key")
 
     response = await asyncio.to_thread(
         requests.get,
-        url=f"{MISTRAL_API_URL}/v1/models/{model}",
+        url=f"{MISTRAL_API_URL}/v1/models",
         headers={"Authorization": f"Bearer {api_key}"},
     )
 
@@ -54,8 +54,6 @@ async def validate_api_key(api_key: str, model: str) -> None:
         raise InvalidAPIKey
     if response.status_code == 403:
         raise UnauthorizedError
-    if response.status_code == 404:
-        raise ModelNotFound
     if response.status_code != 200:
         raise UnknownError
 
@@ -152,9 +150,7 @@ class ConfigFlow(ConfigFlow, domain=DOMAIN):
 
         if user_input is not None:
             try:
-                await validate_api_key(
-                    user_input[CONF_API_KEY], user_input[CONF_MODEL]
-                )
+                await validate_api_key(user_input[CONF_API_KEY])
 
                 return self.async_create_entry(
                     title=user_input.get(CONF_NAME, "Mistral Voxtral"),
@@ -178,8 +174,6 @@ class ConfigFlow(ConfigFlow, domain=DOMAIN):
                 errors["base"] = "unauthorized"
             except InvalidAPIKey:
                 errors[CONF_API_KEY] = "invalid_api_key"
-            except ModelNotFound:
-                errors["base"] = "model_not_found"
             except UnknownError:
                 errors["base"] = "unknown"
 
@@ -203,7 +197,7 @@ class ConfigFlow(ConfigFlow, domain=DOMAIN):
                 api_key = user_input.get(
                     CONF_API_KEY, entry.data.get(CONF_API_KEY, "")
                 )
-                await validate_api_key(api_key, user_input[CONF_MODEL])
+                await validate_api_key(api_key)
 
                 self.hass.config_entries.async_update_entry(
                     entry=entry,
@@ -232,8 +226,6 @@ class ConfigFlow(ConfigFlow, domain=DOMAIN):
                 errors["base"] = "unauthorized"
             except InvalidAPIKey:
                 errors[CONF_API_KEY] = "invalid_api_key"
-            except ModelNotFound:
-                errors["base"] = "model_not_found"
             except UnknownError:
                 errors["base"] = "unknown"
 
@@ -276,6 +268,3 @@ class UnauthorizedError(exceptions.HomeAssistantError):
 class InvalidAPIKey(exceptions.HomeAssistantError):
     """Invalid api_key error."""
 
-
-class ModelNotFound(exceptions.HomeAssistantError):
-    """Model not found error."""

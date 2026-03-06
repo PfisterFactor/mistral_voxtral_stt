@@ -8,7 +8,6 @@
             "connection_error": "Errore di connessione",
             "invalid_api_key": "Chiave API non valida",
             "unauthorized": "Assicurati che la tua chiave API abbia i permessi necessari per questo modello",
-            "model_not_found": "Modello non trovato",
             "unknown": "Errore sconosciuto"
         },
         "step": {

@@ -8,7 +8,6 @@
             "connection_error": "Connection error",
             "invalid_api_key": "Invalid API key",
             "unauthorized": "Make sure your API key has the required permissions for this model",
-            "model_not_found": "Model not found",
             "unknown": "Unknown error"
         },
         "step": {

@@ -8,7 +8,6 @@
             "connection_error": "Savienojuma kluda",
             "invalid_api_key": "Nederiga API atslega",
             "unauthorized": "Ludzu parliecinieties, ka jusu API atslegai ir nepieciesamas atlaujas sim modelim",
-            "model_not_found": "Modelis nav atrasts",
             "unknown": "Nezinama kluda"
         },
         "step": {
