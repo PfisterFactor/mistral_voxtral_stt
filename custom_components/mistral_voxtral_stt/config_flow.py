@@ -57,7 +57,6 @@ async def validate_api_key(api_key: str) -> None:
     if response.status_code != 200:
         raise UnknownError
 
-
 # ---- Schemas -------------------------------------------------------------
 
 MODEL_NAMES = [m.name for m in MODELS]
