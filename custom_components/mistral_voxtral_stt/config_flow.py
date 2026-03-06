@@ -28,7 +28,7 @@ from .const import (
     DOMAIN,
     MISTRAL_API_URL,
 )
-from .whisper_provider import DEFAULT_MODEL, MODELS
+from .models import DEFAULT_MODEL, MODELS
 
 
 # ---- Validation ---------------------------------------------------------

@@ -31,7 +31,7 @@ from homeassistant.helpers.entity_platform import AddEntitiesCallback
 
 from . import _LOGGER
 from .const import CONF_PROMPT, CONF_TEMPERATURE, MISTRAL_API_URL
-from .whisper_provider import MODELS_BY_NAME, ModelType, VoxtralModel
+from .models import MODELS_BY_NAME, ModelType, VoxtralModel
 
 
 async def async_setup_entry(

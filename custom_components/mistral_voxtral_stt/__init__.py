@@ -5,7 +5,7 @@ from homeassistant.const import CONF_API_KEY, CONF_MODEL, CONF_NAME, Platform
 from homeassistant.core import HomeAssistant
 
 from .const import _LOGGER, CONF_PROMPT, CONF_TEMPERATURE, DEFAULT_PROMPT, DEFAULT_TEMPERATURE
-from .whisper_provider import DEFAULT_MODEL
+from .models import DEFAULT_MODEL
 
 PLATFORMS = [Platform.STT]
 
